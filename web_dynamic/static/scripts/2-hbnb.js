@@ -1,3 +1,10 @@
+// This code will be executed once the DOM is ready
+$(document).ready(init);
+
+// The host URL for the API
+const HOST = 35.175.65.241;
+
+// Initialization Function
 $(document).ready(function () {
   let checkedAmenities = {};
   $(document).on('change', "input[type='checkbox']", function () {
