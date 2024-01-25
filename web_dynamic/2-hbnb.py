@@ -1,4 +1,3 @@
-#!/usr/bin/python3
 """Flask app to generate complete html page containing location/amenity
 dropdown menus and rental listings"""
 from flask import Flask, render_template
@@ -16,10 +15,10 @@ def display_hbnb():
     places = storage.all('Place')
     cache_id = uuid.uuid4()
     return render_template('2-hbnb.html',
-                           states=states,
-                           amenities=amenities,
-                           places=places,
-                           cache_id=cache_id)
+states=states,
+amenities=amenities,
+places=places,
+cache_id=cache_id)
 
 
 @app.teardown_appcontext
